@@ -1,11 +1,10 @@
-
 # Keyboard Assistant
 
 > **Important Note:**  
-> This README is best viewed on **GitHub** — where it will be fully formatted with headings, bullet points, links, and images.  
-> If you view this README locally on your computer (e.g., in a plain text editor), it may not display properly and images may be missing.
+> This README is best viewed on **GitHub**, where it will be fully formatted with headings, bullet points, links, and images.  
+> If you view this README locally on your computer (e.g., in a plain text editor), it may not display properly, and images may be missing.
 
-**Keyboard Assistant** is a powerful, user-friendly tool designed to simplify repetitive tasks and transform any point-and-click game into a fully keyboard-controlled experience! It allows you to bind mouse movements and keyboard clicks to any key you choose — enabling smooth, customizable automation at the press of a button.
+**Keyboard Assistant** is a powerful, user-friendly tool designed to simplify repetitive tasks and transform any point-and-click game into a fully customizable, keyboard-controlled experience! It allows you to bind mouse movements and keyboard clicks to any key you choose, enabling smooth, customizable automation at the press of a button.
 
 This software is intended for personal, educational, and/or commercial use (within license limits), and is distributed under the terms outlined in the included `LICENSE` file.
 
@@ -62,7 +61,7 @@ Extract the downloaded `.zip` file to a location of your choice.
 > **Keyboard Assistant** is electronically signed, for your safety.  
 > However, because Windows requires a minimum of **1,000 downloads and runs** to fully recognize new software, you may see a **SmartScreen warning** when you first launch the program.  
 > This is completely normal for new, independent applications — simply choose **"Run Anyway"** if you trust the source (and you downloaded it directly from the official GitHub page).
-
+> Do **NOT** run the program if the publisher is listed as "Unknown".
 
 ## 4. Keyboard Assistant Editor (KAE) Instructions
 
@@ -73,6 +72,8 @@ Upon launching KAE, you'll be presented with four options:
 - **Config Editor**
 - **Report a Bug**
 - **Close**
+
+![image](https://github.com/user-attachments/assets/7be76dcb-9899-4727-97dc-52f2bb30125c)
 
 ---
 
@@ -115,6 +116,8 @@ All actions and parameters are carefully guided, with unavailable options automa
 - **Glide** — Define how long (in milliseconds) the mouse should take to move between coordinates.
 - **Press** — Set how many times to press a key (for KeyPress commands).
 
+![image](https://github.com/user-attachments/assets/037b38e9-e720-410b-8e2e-b17b98f27c6e)
+
 ---
 
 ### Config Editor
@@ -133,6 +136,8 @@ You can tweak:
 - **Pause Hotkey** — Key or key combo to pause/resume Keyboard Assistant.
 - **Exit Hotkey** — Key or key combo to instantly close the program.
 - **Refresh Hotkey** — Key or key combo to reload the command file while running.
+
+![image](https://github.com/user-attachments/assets/7d401efc-a75e-48d6-a5f4-c7ec104c0a9d)
 
 ---
 
@@ -224,10 +229,7 @@ You'll need a chatbot that can:
 I highly recommend **[MixItUp](https://mixitupapp.com/)** because:
 - It's completely free
 - It supports both Twitch and YouTube simultaneously
-- It offers nearly *infinite* customization (audio, GIFs, on-stream alerts, chat commands, and more)
-
-> **Important:**  
-MixItUp, or something similar, is required because it can **read chat messages and virtually press keys** automatically — exactly what we need!
+- It offers nearly *infinite* customization (audio, GIFs, on-stream alerts, chat commands, timers, moderation, giveaways, and so much more!)
 
 ---
 
@@ -246,6 +248,7 @@ You'll want to create **one command per action** you want chat to trigger.
      > - If you want to **require an exclamation mark** (e.g., `!LeftDoor`), turn **ON** the "Auto-Include '!'" toggle.  
      > - **Do not** manually type the exclamation mark into the trigger field — MixItUp adds it automatically.
      > - If you prefer chatters to just type the word alone (`LeftDoor`), leave Auto-Include **OFF**.
+
 ---
 
 ### Step 3: Configure Virtual Key Presses
@@ -257,9 +260,11 @@ Inside **each** MixItUp command:
 4. Configure the action:
    - Set **Type** to **Keyboard**.
    - Select the specific key you want MixItUp to **virtually press** when this command is triggered.
-     - Example: When chat says `LeftDoor`, MixItUp will virtually press the `Q` key.
+     - Example: When a chatter says `LeftDoor`, MixItUp will virtually press the `Q` key.
 
 ✅ **Repeat Steps 2–3** for every keybind you want chat to control!
+
+![image](https://github.com/user-attachments/assets/cc6a1c77-5883-4c47-b7b7-38bb5c616426)
 
 ---
 
@@ -294,6 +299,11 @@ In TikFinity:
 
 ✅ **Repeat Step 2** for every keybind you want chat to control!
 
+![image](https://github.com/user-attachments/assets/809f42d7-5c68-4079-84db-2dd496a7c6e6)
+
+
+![image](https://github.com/user-attachments/assets/dae1bedc-ee3c-4142-aa5f-88561d86f7d2)
+
 ---
 
 ## Next Steps (After Chatbot Setup)
@@ -318,7 +328,7 @@ You're almost there! Here's how to launch everything:
 (Just having the app open will automatically make it start listening to chat.)
 
 **Step 2:**  
-Run **Keyboard Assistant.exe** — it will automatically start intercepting key presses!
+Run `Keyboard Assistant.exe` — it will automatically start intercepting key presses!
 
 **Step 3:**  
 That's it!  
@@ -330,7 +340,7 @@ Now when someone sends a chat message (like `!LeftDoor` or `/LeftDoor`):
 
 ## Wrapping Up
 
-- Play along with your viewers or just sit back and watch!
+- Play along with your viewers on another device, or just sit back and watch!
 - You can **pause** or **exit** Keyboard Assistant at any time using your configured hotkeys.
 - When you're ready to end the stream, simply close Keyboard Assistant and your chatbot app.
 
