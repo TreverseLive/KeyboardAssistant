@@ -1,149 +1,359 @@
+
 # Keyboard Assistant
 
-**Keyboard Assistant** is a software designed to convert any point-and-click game into a keyboard-based game! It allows users to bind mouse movements and keyboard clicks to any valid keyboard key. This software is intended for personal, educational, and/or commercial use and is distributed under the terms of the custom license described in the LICENSE file.
+> **Important Note:**  
+> This README is best viewed on **GitHub** — where it will be fully formatted with headings, bullet points, links, and images.  
+> If you view this README locally on your computer (e.g., in a plain text editor), it may not display properly and images may be missing.
 
-Also included in this care package is Position.exe, which will display your mouse's current local AND global
-position, every second! Simply press ENTER on your keyboard to copy the coordinates to your clipboard for
-easy access!
+**Keyboard Assistant** is a powerful, user-friendly tool designed to simplify repetitive tasks and transform any point-and-click game into a fully keyboard-controlled experience! It allows you to bind mouse movements and keyboard clicks to any key you choose — enabling smooth, customizable automation at the press of a button.
+
+This software is intended for personal, educational, and/or commercial use (within license limits), and is distributed under the terms outlined in the included `LICENSE` file.
+
+**Bonus**:  
+Also included is the **Keyboard Assistant Editor (KAE)** — a companion program that makes it quick and easy to create and edit your commands and configurations through a simple, guided interface!
 
 ## Table of Contents
-1. Features
-2. Installation
-3. Configuration
-4. License
-5. Contact
+1. [Prerequisites](#1-prerequisites)
+2. [Features](#2-features)
+3. [Installation](#3-installation)
+4. [Keyboard Assistant Editor (KAE) Instructions](#4-keyboard-assistant-editor-kae-instructions)
+5. [Keyboard Assistant Instructions](#5-keyboard-assistant-instructions)
+6. [Twitch/YouTube/TikTok Plays Instructions](#6-twitchyoutubetiktok-plays-instructions)
+7. [License](#7-license)
+8. [Contact](#8-contact)
 
-## Features
- - Fully customizable keyboard shortcuts.
- - Works with any version of Windows.
- - Supports any and all ASCII characters, numbers, and arrow keys.
- - Your number of keybinds is only limited by your keyboard size.
- - Your number of supported coordinates is only limited by your monitor size.
- - Simultaneous, multi-monitor support; you can move across monitors!
+## 1. Prerequisites
 
-## Installation
- - Download the most recent version of the .zip file from the GitHub repository (https://github.com/TreverseLive/Keyboard-Assistant/releases)
- - Unpack the .zip file to wherever you'd like, ensuring that all included files remain in the same directory.
+Before using Keyboard Assistant, make sure you have the following:
 
-### Prerequisites
-Make sure you have the following installed on your system:
-- Any software similar to Windows Command Prompt or Powershell
+- **A command-line tool** such as Windows Command Prompt or PowerShell (or any similar terminal).
+- **A working keyboard** — for obvious reasons!
 
-## Usage & Configuration
+## 2. Features
 
-### Pause
-To pause the program at any time, simply use the configurable pause hotkey found in the config.txt file! By
-default, the hotkey is set to CTRL+SPACE.
+- **Fully customizable keyboard shortcuts** — bind any supported key to custom actions.
+- **Cross-platform support** — works on Windows, Mac, and Linux.
+- **Extensive key compatibility** — supports all ASCII characters, numbers, arrow keys, and special keys.
+- **Unlimited keybinds** — limited only by the number of keys on your keyboard!
+- **Multi-monitor support** — seamlessly move actions across multiple screens.
+- **Infinite coordinate support** — create commands with as many coordinates as needed.
+- **Configurable hotkeys** — easily set up pause, exit, and refresh hotkeys.
+- **Infinite command file compatibility** — load and swap between as many command files as you want.
+- **User-friendly editor** — included Keyboard Assistant Editor (KAE) for easy creation and editing of commands/configs.
+- **Built-in bug report form** — quickly report any issues to the developer.
 
-### Configuration Files
- - All configuration can be accessed via the provided config.txt file.
- - To create custom keybinds, simply create a new .txt file in the same directory as Keyboard Assistant's .exe file, and type the name into the appropriate spot in the config.txt file!
-     - To give you a little push, I also included fnaf.txt, which is already configured to play Five Nights
-       at Freddy's, right off the bat!
+## 3. Installation
 
-### Supported command types:
-Keyboard Assistant supports the following types of commands:
-- **Click**: Move the mouse to a set of coordinates, wait, and click.
-- **Move**: Move the mouse through multiple coordinates smoothly.
-- **Drag**: Click and drag from one set of coordinates to another.
-- **Delayed**: Move through multiple coordinates, then click and hold at the end.
-- **KeyPress**: Press a key multiple times.
-- **KeyHold**: Press and hold a key for a set duration.
+Installing **Keyboard Assistant** is quick and easy:
+
+**Step 1:**  
+[Download the latest version](https://github.com/TreverseLive/KeyboardAssistant/releases) from GitHub — it's completely free!  
+_(Bonus: It comes pre-configured for FNAF 1 command inputs, so if that's your goal, setup is even easier.)_
+
+**Step 2:**  
+Extract the downloaded `.zip` file to a location of your choice.  
+> **Important:** Keep all extracted files **together** in the same folder!
+
+**Step 3:**  
+- Run `Keyboard Assistant.exe` to start the main program.
+- Use `Keyboard Assistant Editor.exe` to easily edit your commands and configuration.
+
+> **Security Notice:**  
+> **Keyboard Assistant** is electronically signed, for your safety.  
+> However, because Windows requires a minimum of **1,000 downloads and runs** to fully recognize new software, you may see a **SmartScreen warning** when you first launch the program.  
+> This is completely normal for new, independent applications — simply choose **"Run Anyway"** if you trust the source (and you downloaded it directly from the official GitHub page).
 
 
-### Click Command
-Moves the mouse to a coordinate, waits, clicks, and holds for a duration.
+## 4. Keyboard Assistant Editor (KAE) Instructions
 
-**Example**:
-Keybind=A
-Type=Click
-Coordinate1=100,100
-Coordinate2=200,200
-Wait=500
-Hold=200
-Mouse=1
+The **Keyboard Assistant Editor (KAE)** is your all-in-one tool for editing your command and config files — no coding experience needed!  It walks you through every step, ensuring your commands are precise, correctly formatted, and ready for action.
 
-### Move Command
-Move the mouse through multiple coordinates smoothly.
+Upon launching KAE, you'll be presented with four options:
+- **Command Editor**
+- **Config Editor**
+- **Report a Bug**
+- **Close**
 
-**Example**:
-Keybind=B
-Type=Move
-Coordinate1=100,100
-Coordinate2=200,200
-Coordinate3=300,300
-Wait=200
-Glide=500 **(optional)**
+---
 
-### Drag Command
-Clicks at the first coordinate, drags through the others, and releases at the last one.
+### Command Editor
 
-**Example**:
-Keybind=C
-Type=Drag
-Coordinate1=50,50
-Coordinate2=300,300
-Coordinate3=400,400
-Wait=300
-Glide=500 **(optional)**
+The **Command Editor** helps you create and manage commands that will be run by Keyboard Assistant.  
+All actions and parameters are carefully guided, with unavailable options automatically grayed out based on the command type.
 
-### Delayed Command
-Moves through multiple coordinates, then clicks and holds at the last coordinate.
- 
-**Example**:
-Keybind=1
-Type=Delayed
-Coordinate1=150,150
-Coordinate2=250,250
-Wait=1000
-Hold=500
-Mouse=Right
-Glide=500 **(optional)**
+**Main parameters you'll use:**
 
-### KeyPress
-Presses a key multiple times with a specified delay between presses.
+- **Select File** — Choose (or create) a `.txt` file where your commands will be stored.
+- **Select Command** — Choose an existing command to edit, or create a new one.
+- **Name** — A unique name identifier for each command.
+- **Keybind** — Bind any ASCII character, arrow key (up, down, left, right), or special key (e.g., Ctrl, Enter, PageUp) to the action.
+- **Type** — Choose the type of action to perform:
+  - **Click** — Move to coordinates, wait, and click.
+  - **Move** — Smoothly move through multiple coordinates.
+  - **Delayed** — Click and drag from one coordinate to another.
+  - **Drag** — Move across coordinates, then click and hold.
+  - **KeyPress** — Press a key multiple times.
+  - **KeyHold** — Press and hold a key for a specified duration.
 
-**Example**:
-Keybind=2
-Type=KeyPress
-Wait=500
-Press=5
+---
 
-### HeyHold Command
-Presses and holds a key for a specified duration after a delay.
+**Coordinate Management Parameters:**
 
-**Example**:
-Keybind=/
-Type=KeyHold
-Wait=1000
-Hold=3000
+- **Select Coordinate** — Edit or delete an existing coordinate (leave blank if none).
+- **Coord Details** — View and edit the details of the selected coordinate.
+- **Add Coordinate** — Add new coordinates to your command. (Use the **Start Capturing** button to grab a coordinate directly.)
+  - **Add Below Option** — Check this box if you want to insert the new coordinate *after* a specific existing one. Leave it unchecked to add it to the end of the list.
+  - **Infinite Coordinates** — All command types can use as many coordinates as you need!
 
-### Valid Inputs for Parameters
+---
 
-| Parameter         | Description                                                                  |
-|-------------------|------------------------------------------------------------------------------|
-| **Keybind**       | Any printable ASCII character (letters, symbols), number keys, or arrow keys.|
-| **Type**          | `Click`, `Move`, `Delayed`, `Drag`, `KeyPress`, or `KeyHold`.                |
-| **Coordinate(x)** | Any valid x,y formatted coordinate within the resolution of your monitor.    |
-| **Wait**          | Any valid integer (time in milliseconds).                                    |
-| **Hold**          | Any valid integer (time in milliseconds).                                    |
-| **Glide**         | Any valid integer (time in milliseconds). **(optional parameter)**           |
-| **Mouse**         | `1` (or left click) / `2` (or right click).                                  |
-| **Press**         | Any valid integer (number of key presses for `KeyPress` command).            |
+**Additional Parameters:**
 
-## License
-This project is licensed under the terms described in the LICENSE file. You may use this software for personal, educational, and/or commercial purposes, but you may not redistribute or modify the core code. Please see the LICENSE file for more details.
+- **Wait** — Set wait time (in milliseconds) before execution and between steps.
+- **Hold** — Set the duration (in milliseconds) to hold down a key or mouse button.
+- **Mouse** — Choose the mouse button (Left or Right).
+- **Glide** — Define how long (in milliseconds) the mouse should take to move between coordinates.
+- **Press** — Set how many times to press a key (for KeyPress commands).
 
-## Contact
-For any questions, concerns, or support, please feel free to reach out:
+---
 
-- **Treverse**
-- **Email**: Treverse.Biz@Gmail.com
-- **GitHub**: https://github.com/TreverseLive
-- **Website**: https://Treverse.Live
+### Config Editor
 
-If you’ve found this project useful and would like to support its development, you're welcome to contribute:
+The **Config Editor** lets you easily adjust the main settings for Keyboard Assistant.  
+You can tweak:
 
-- https://streamelements.com/treverselive/tip
+- **Command File Name** — The `.txt` file Keyboard Assistant reads commands from.
+- **Debug Mode** — Enable or disable detailed logging of program activity.
+- **Sleep Mode** — Control program CPU usage:
+  - **0** = No sleep (maximum responsiveness)
+  - **1** = Sleep after each command
+  - **2** = Periodic sleep/wake cycle while idle
+- **Sleep Time** — How long the program sleeps (in seconds).
+- **Sleep Warning** — Toggle notifications when the program sleeps or wakes.
+- **Pause Hotkey** — Key or key combo to pause/resume Keyboard Assistant.
+- **Exit Hotkey** — Key or key combo to instantly close the program.
+- **Refresh Hotkey** — Key or key combo to reload the command file while running.
 
-Your support is greatly appreciated, but by no means expected. Thank you for using **Keyboard Assistant**!
+---
+
+### Report a Bug
+
+Selecting **Report a Bug** will open a Google Form where you can quickly describe any issues you encounter.  
+Your feedback helps improve Keyboard Assistant!
+
+---
+
+### Close
+
+Select **Close** to exit KAE once you're done.  
+_(Pretty straightforward!)_
+
+## 5. Keyboard Assistant Instructions
+
+Once you've set up your command and config files using the **Keyboard Assistant Editor (KAE)**, you're ready to roll! Running `Keyboard Assistant.exe` will take it from there — handling everything automatically.
+
+Keyboard Assistant is pre-programmed to:
+- Check for updates.
+- Verify all keybinds.
+- Attempt to auto-correct minor errors.
+
+Outputs are **color-coded** for easy reading:
+- **Green** — Successful validation or execution.
+- **Yellow** — Warning; something worth reviewing but not critical.
+- **Red** — Urgent error; a command may not function correctly.
+
+---
+
+### Pause, Exit, & Refresh Controls
+
+At any time, you can:
+- **Pause** the program
+- **Exit** the program
+- **Refresh** the command file
+
+These actions are triggered using the customizable hotkeys defined in your `config.txt` file.  
+(You can easily edit these settings through the Keyboard Assistant Editor!)
+
+---
+
+### Included Files
+
+Your installation includes several important files:
+
+- **config.txt** — Stores your program settings (editable via KAE).
+- **log.txt** — Stores all important outputs, to diagnose any issues.
+- **Command Files** — You can create as many `.txt` command files as you like!
+- **FNAF.txt** — A sample file already set up to control Five Nights at Freddy's.
+
+**Pro Tip:**  
+To create your own custom command file:
+1. Create a new `.txt` file anywhere on your computer.
+2. Use the **Keyboard Assistant Editor** to add and manage commands.
+
+---
+
+### How It Works (Behind the Scenes)
+
+Once you run **Keyboard Assistant**:
+1. It reads and verifies your selected command file.
+2. It checks each command for proper formatting, readability, and executability.
+3. If any issues are found, detailed warnings will explain exactly what went wrong.
+4. All valid commands will become active — and Keyboard Assistant will listen for your key inputs!
+
+At that point, your automation is live and ready to go!
+
+
+## 6. Twitch/YouTube/TikTok Plays Instructions
+
+Setting up a **Twitch/YouTube/TikTok Plays** stream is easy with Keyboard Assistant!  Some setups (especially TikTok) may require additional tools or subscriptions, but this detailed guide will walk you through everything.
+
+You have two main options, depending on where you’re streaming:
+
+---
+
+## Option 1: Twitch/YouTube Plays
+
+_(Skip this section if you are only streaming to TikTok.)_
+
+### Step 1: Download a Chatbot
+
+You'll need a chatbot that can:
+- Read your Twitch or YouTube chat
+- Virtually press keys on your keyboard
+
+I highly recommend **[MixItUp](https://mixitupapp.com/)** because:
+- It's completely free
+- It supports both Twitch and YouTube simultaneously
+- It offers nearly *infinite* customization (audio, GIFs, on-stream alerts, chat commands, and more)
+
+> **Important:**  
+MixItUp, or something similar, is required because it can **read chat messages and virtually press keys** automatically — exactly what we need!
+
+---
+
+### Step 2: Set Up Chat Commands in MixItUp
+
+You'll want to create **one command per action** you want chat to trigger.
+
+**To create a command:**
+1. Open **MixItUp** and click the **hamburger icon** at the top-left corner.
+2. Click the **Commands** tab.
+3. At the bottom of the page, click **New Command**.
+4. In the resulting popup window:
+   - Name the command after the action (e.g., `LeftDoor`).
+   - In the **Chat Triggers** field, enter the chat word(s) that should activate the command (e.g., `LeftDoor`).
+     > **Important:**  
+     > - If you want to **require an exclamation mark** (e.g., `!LeftDoor`), turn **ON** the "Auto-Include '!'" toggle.  
+     > - **Do not** manually type the exclamation mark into the trigger field — MixItUp adds it automatically.
+     > - If you prefer chatters to just type the word alone (`LeftDoor`), leave Auto-Include **OFF**.
+---
+
+### Step 3: Configure Virtual Key Presses
+
+Inside **each** MixItUp command:
+1. At the bottom of the popup window, select the **Action** dropdown.
+   - Scroll and find **Input (Keyboard & Mouse)**.
+   - Click the **"+"** button to import it into the command.
+4. Configure the action:
+   - Set **Type** to **Keyboard**.
+   - Select the specific key you want MixItUp to **virtually press** when this command is triggered.
+     - Example: When chat says `LeftDoor`, MixItUp will virtually press the `Q` key.
+
+✅ **Repeat Steps 2–3** for every keybind you want chat to control!
+
+---
+
+## Option 2: TikTok Plays
+
+_(Skip this section if you are only streaming to Twitch/YouTube.)_
+
+> **⚠️ WARNING:**  You may need to purchase **TikFinity Pro** ($19/month) if you want to create more than 5 actions.
+
+### Step 1: Download TikFinity
+
+- Download **[TikFinity](https://tikfinity.zerody.one/)** — a powerful, free desktop app that reads TikTok chat.
+
+> **Note:**  TikFinity has lots of cool features, but we mainly need it to **detect chat messages and trigger virtual key presses**.
+
+---
+
+### Step 2: Set Up Events and Actions in TikFinity
+
+In TikFinity:
+1. Go to the **Actions & Events** tab.
+   > This is where you create **Events** that trigger **Actions**.
+2. Create a **New Action**:
+   - Toggle **ON** **Simulate Keystrokes**.
+   - Select the key(s) you want TikFinity to virtually press.
+   - (Optional) Adjust cooldowns, durations, and other settings as desired.
+3. Create a **New Event**:
+   - Set it to be triggered by **Commenting a Command**.
+   - Example: When someone sends `/LeftDoor`.
+     > _(TikTok commands typically start with `/` or `!`)_
+   - Link the appropriate **Action** to the **Event** at the bottom of the Event setup window.
+
+✅ **Repeat Step 2** for every keybind you want chat to control!
+
+---
+
+## Next Steps (After Chatbot Setup)
+
+After setting up MixItUp (Twitch/YouTube) or TikFinity (TikTok):
+
+1. **Use the Keyboard Assistant Editor (KAE)** to create a **command** matching each virtual key press.
+   - Example: If `/LeftDoor` triggers a virtual `Q` keypress, create a `Q` command in KAE.
+2. **Assign coordinates/actions** to each command according to what you want that key to do.
+
+Refer to [Section 5: Keyboard Assistant Instructions](#5-keyboard-assistant-instructions) for help creating commands!
+
+---
+
+## Final Setup & Activation
+
+You're almost there! Here's how to launch everything:
+
+**Step 1:**  
+- Open your game.
+- Open **MixItUp** or **TikFinity** — whichever one you configured.  
+(Just having the app open will automatically make it start listening to chat.)
+
+**Step 2:**  
+Run **Keyboard Assistant.exe** — it will automatically start intercepting key presses!
+
+**Step 3:**  
+That's it!  
+Now when someone sends a chat message (like `!LeftDoor` or `/LeftDoor`):
+- Your chatbot (MixItUp or TikFinity) will virtually press a key.
+- **Keyboard Assistant** will detect that keypress and execute the correct action!
+
+---
+
+## Wrapping Up
+
+- Play along with your viewers or just sit back and watch!
+- You can **pause** or **exit** Keyboard Assistant at any time using your configured hotkeys.
+- When you're ready to end the stream, simply close Keyboard Assistant and your chatbot app.
+
+---
+
+## 7. License
+
+This project is licensed under the terms outlined in the `LICENSE` file. You are permitted to use this software for personal, educational, and limited commercial purposes, provided that the software itself is not the primary focus of any commercial offering. Redistribution or modification of the core code is prohibited. For full details, please refer to the `LICENSE` file.
+
+
+## 8. Contact
+
+For any questions, concerns, or support, feel free to reach out:
+
+**Treverse**
+- **Email:** [Treverse.Biz@gmail.com](mailto:Treverse.Biz@gmail.com)
+- **GitHub:** [https://github.com/TreverseLive](https://github.com/TreverseLive)
+- **Website:** [https://Treverse.Live](https://Treverse.Live)
+
+---
+
+If you find **Keyboard Assistant** helpful and would like to support its continued development, you're welcome (but not obligated) to contribute here:
+
+- [Support Treverse via StreamElements](https://streamelements.com/treverselive/tip)
+
+Your support is always appreciated — thank you for using **Keyboard Assistant**!
