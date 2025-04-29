@@ -90,6 +90,7 @@ All actions and parameters are carefully guided, with unavailable options automa
 - **Keybind** — Bind any ASCII character, arrow key (up, down, left, right), or special key (e.g., Ctrl, Enter, PageUp) to the action.
 - **Type** — Choose the type of action to perform:
   - **Click** — Move to coordinates, wait, and click.
+  - **Double** — Move to coordinates, wait, and DOUBLE-click.
   - **Move** — Smoothly move through multiple coordinates.
   - **Delayed** — Click and drag from one coordinate to another.
   - **Drag** — Move across coordinates, then click and hold.
