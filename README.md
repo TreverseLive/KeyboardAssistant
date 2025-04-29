@@ -211,7 +211,10 @@ At that point, your automation is live and ready to go!
 
 ## 6. Twitch/YouTube/TikTok Plays Instructions
 
-Setting up a **Twitch/YouTube/TikTok Plays** stream is easy with Keyboard Assistant!  Some setups (especially TikTok) may require additional tools or subscriptions, but this detailed guide will walk you through everything.
+**Twitch Plays** is a niche genre of livestream on Twitch where **the audience collectively controls a game by sending commands through the chat**. Instead of the streamer playing, viewers type inputs (like “up”, “down”, “A”, “start”) into the chat, and a chatbot reads these messages and translates them into game controls.
+The genre started back in 2014 with **“Twitch Plays Pokémon,”** where thousands of viewers attempted to beat Pokémon Red together — leading to chaotic, unpredictable, but often hilarious and surprisingly successful progress!
+
+Setting up your own **Twitch/YouTube/TikTok Plays** stream has never been easier using Keyboard Assistant!  Some setups (especially TikTok) may require additional tools or subscriptions, but this detailed guide will walk you through everything.
 
 You have two main options, depending on where you’re streaming:
 
