@@ -2,7 +2,7 @@
 
 > **Important Note:**  
 > This README is best viewed on **GitHub**, where it will be fully formatted with headings, bullet points, links, and images.  
-> If you view this README locally on your computer (e.g., in a plain text editor), it may not display properly, and images may be missing.
+> If you view this README locally on your computer (e.g., in a plain text editor), it may not display properly, some areas may be outdated, and images may be missing.
 
 **Keyboard Assistant** is a powerful, user-friendly tool designed to simplify repetitive tasks and transform any point-and-click game into a fully customizable, keyboard-controlled experience! It allows you to bind mouse movements and keyboard clicks to any key you choose, enabling smooth, customizable automation at the press of a button.
 
